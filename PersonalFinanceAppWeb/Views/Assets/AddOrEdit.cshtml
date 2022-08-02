@@ -1,0 +1,62 @@
+﻿@model PersonalFinanceAppWeb.Models.Asset
+
+@{
+    ViewData["PageTitle"] = Model.AssetID==0?"Create a new Asset":"Edit Existing Asset";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-7">
+        <div class="widget p-5" style="background-color:#212b36">
+            <form asp-action="AddOrEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" name="AssetID" value="@Model.AssetID" />
+            <div class="mb-3">
+                <div class='e-btn-group custom-rbt-group'>
+                <input type="radio" id="radioleft" name="AssetClass" value="Equity" checked="@(Model.AssetClass=="Equity")"/>
+                <label class="e-btn" for="radioleft">Equity</label>
+                <input type="radio" id="radiomiddle" name="AssetClass" value="Debt" checked="@(Model.AssetClass=="Debt")" />
+                <label class="e-btn" for="radiomiddle">Debt</label>
+                <input type="radio" id="radioright" name="AssetClass" value="Gold" checked="@(Model.AssetClass=="Gold")" />
+                <label class="e-btn" for="radioright">Gold</label>
+                
+             </div>
+             <div class="mb-3">
+                <ejs-textbox id="assetname" placeholder="Asset Name" ejs-for="AssetName" floatLabelType="Always"></ejs-textbox>
+                <span asp-validation-for="AssetName" class="text-danger fs-6"></span>
+            </div>
+            <div class="mb-3">
+                <ejs-numerictextbox id="expectedreturn"  placeholder="Expected Return in %" min="0" ejs-for="ExpectedReturn"  floatLabelType="Always"></ejs-numerictextbox>
+                <span asp-validation-for="ExpectedReturn" class="text-danger fs-6"></span>
+            </div>
+            <div class="mb-3">
+                <ejs-numerictextbox id="largecapallocation" type="number" min="0" placeholder="Large Cap Allocation in %"   ejs-for="LargeCapAllocation" floatLabelType="Always"></ejs-numerictextbox>
+                
+            </div>
+            <div class="mb-3">
+                <ejs-numerictextbox id="midcapallocation" min="0" placeholder="Mid Cap Allocation in %"  ejs-for="MidCapAllocation" floatLabelType="Always"></ejs-numerictextbox>
+                
+            </div>
+            <div class="mb-3">
+                <ejs-numerictextbox id="smallcapallocation" min="0" placeholder="Small Cap Allocation in %"  ejs-for="SmallCapAllocation" floatLabelType="Always"></ejs-numerictextbox>
+                
+            </div>
+            
+            </div>
+            <ejs-button id="submit" type="submit" content="Submit" cssClass="e-success"></ejs-button>
+        </form>
+        </div>
+        
+
+    </div>
+    <div class="col-md-5">
+            <div class="widget h-100 d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-shapes fa-2xl"></i>
+            </div>
+     </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

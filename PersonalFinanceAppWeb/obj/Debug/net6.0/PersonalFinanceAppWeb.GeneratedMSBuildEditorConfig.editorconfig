@@ -1,0 +1,112 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PersonalFinanceAppWeb
+build_property.RootNamespace = PersonalFinanceAppWeb
+build_property.ProjectDir = D:\Important Documents\Amit Roy Studies and Jobs\Code Samples\Personal Finance App\PersonalFinanceAppAzureDevOps\PersonalFinanceAppWeb\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Important Documents\Amit Roy Studies and Jobs\Code Samples\Personal Finance App\PersonalFinanceAppAzureDevOps\PersonalFinanceAppWeb
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Assets/AddOrEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRzXEFkZE9yRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Assets/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzZXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Category/AddOrEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkT3JFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/InvestmentsDashboard/InvestmentDashboardIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudHNEYXNoYm9hcmRcSW52ZXN0bWVudERhc2hib2FyZEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Investments/AddOrEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudHNcQWRkT3JFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Investments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/LoginAndRegistration/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5BbmRSZWdpc3RyYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/LoginAndRegistration/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5BbmRSZWdpc3RyYXRpb25cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/LoginAndRegistration/Login2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5BbmRSZWdpc3RyYXRpb25cTG9naW4yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/LoginAndRegistration/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5BbmRSZWdpc3RyYXRpb25cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Shared/_LogoutLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dvdXRMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Shared/_SideBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlQmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Shared/_TestLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UZXN0TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Transaction/AddOrEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cQWRkT3JFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Transaction/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Important Documents/Amit Roy Studies and Jobs/Code Samples/Personal Finance App/PersonalFinanceAppAzureDevOps/PersonalFinanceAppWeb/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-oxo5n8zfzp

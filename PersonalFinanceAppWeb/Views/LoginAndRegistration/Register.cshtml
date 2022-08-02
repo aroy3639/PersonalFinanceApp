@@ -1,0 +1,75 @@
+﻿@model PersonalFinanceAppWeb.Models.Registration
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LogoutLayout.cshtml";
+}
+<div row align-content-center>
+<h1 class="fw-bold">Please Register</h1>
+</div>
+
+<div class="row align-content-center">
+    <div class="col-md-10">
+        <div class="widget p-5" style="background-color:#212b36">
+            <form asp-action="Register">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="mb-3">
+                
+            <div class="mb-3">
+                <ejs-textbox id="username" placeholder="Username" ejs-for="UserName" floatLabelType="Always"></ejs-textbox>
+                <span asp-validation-for="UserName" class="text-danger fs-6"></span>
+            </div>
+            <div class="mb-3">
+                <ejs-textbox id="email" placeholder="Email" ejs-for="Email" floatLabelType="Always"></ejs-textbox>
+                <span asp-validation-for="Email" class="text-danger fs-6"></span>
+            </div>
+            
+            <div class="mb-3">
+                <ejs-textbox id="phonenumber" placeholder="Phone Number" ejs-for="PhoneNumber" floatLabelType="Always"></ejs-textbox>
+                <span asp-validation-for="PhoneNumber" class="text-danger fs-6"></span>
+            </div>
+
+            <div class="mb-3">
+                <ejs-textbox id="password" placeholder="Password" type="password" ejs-for="Password" floatLabelType="Always"></ejs-textbox>
+                <span asp-validation-for="Password" class="text-danger fs-6"></span>
+            </div>
+
+            <div class="mb-3">
+                <ejs-textbox id="confirmpassword" type="password" placeholder="Confirm Password" ejs-for="ConfirmPassword" floatLabelType="Always"></ejs-textbox>
+                <span asp-validation-for="ConfirmPassword" class="text-danger fs-6"></span>
+            </div>
+
+            </div>
+            <ejs-button id="submit" type="submit" content="Submit" cssClass="e-success"></ejs-button>
+
+            <p class="change_link">
+                <span>Have an Account ?</span>
+                @Html.ActionLink("Login Here", "Login", "LoginAndRegistration", new { @class = "to_register" })
+            </p>
+
+            <div class="form-group">
+                @if (Model != null)
+                {
+                    @if (Model.ErrorList != null)
+                    {
+
+
+                        foreach (var item in Model.ErrorList)
+                        {
+                            <p class="text-da">@item</p>
+                        }
+                    }
+                }
+            </div>
+           
+        </form>
+        </div>
+        
+
+    </div>
+    
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

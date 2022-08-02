@@ -1,0 +1,67 @@
+﻿
+
+
+@model PersonalFinanceAppWeb.Models.Login
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LogoutLayout.cshtml";
+}
+
+@*<div class="row align-content-center">
+<h1 class="fw-bold">Please Login</h1>
+</div>
+*@
+
+
+<div class="row align-content-center">
+    <div class="col-md-8">
+        <div class="widget p-5" style="background-color:#212b36">
+            <form asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="mb-3">
+                
+            
+            <div class="mb-3">
+                <ejs-textbox id="username" placeholder="Username" ejs-for="Username" floatLabelType="Always"></ejs-textbox>
+                <span asp-validation-for="Username" class="text-danger fs-6"></span>
+            </div>
+            
+            
+
+            <div class="mb-3">
+                <ejs-textbox id="password" type="password" placeholder="Password" ejs-for="Password" floatLabelType="Always"></ejs-textbox>
+                <span asp-validation-for="Password" class="text-danger fs-6"></span>
+            </div>
+
+            @*<p class="change_link">
+                <span style="font-size:small">Forgot Password ?
+                @Html.ActionLink("Click here to Reset", "Register", "LoginAndRegistration", new { @class = "to_register" })</span>
+            </p>*@
+
+            </div>
+            <ejs-button id="submit" type="submit" content="Submit" cssClass="e-success"></ejs-button>
+            <div>
+
+            </div>
+            <p class="change_link" style="align-content:center">
+                <span>New User ?</span>
+                @Html.ActionLink("Register Here", "Register", "LoginAndRegistration", new { @class = "to_register" })
+            </p>
+            <div>
+                <p class="text-danger"> <span>@ViewBag.LoginError </span> </p>
+            </div>
+           
+        </form>
+        </div>
+        
+
+    </div>
+    
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+

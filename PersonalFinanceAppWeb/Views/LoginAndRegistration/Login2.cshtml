@@ -1,0 +1,48 @@
+﻿@model PersonalFinanceAppWeb.Models.Login
+
+@{
+     Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<div id="login" class="animate form">
+             
+    @using (Html.BeginForm("Login2","LoginAndRegistration",FormMethod.Post,new { @autocomplete="on"}))
+    {
+        <h2>Log in</h2> 
+                <p> 
+					@*<label for="username" class="uname" data-icon="u" ><span>Your email or name</span></label>
+                    <input id="username" name="username" required="required" type="text" placeholder="EMAIL OR USERNAME"/>*@
+
+                    <label asp-for="Username" class="control-label"></label>
+                    <input asp-for="Username" class="form-control" />
+                    <span asp-validation-for="Username" class="text-danger" style="color:red"></span>
+                </p>
+
+
+                <p> 
+                    @*<label for="password" class="youpasswd" data-icon="p"><span>Your password</span></label>
+                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> *@
+                    <label asp-for="Password" class="youpasswd" data-icon="p"></label>
+                    <input asp-for="Password" required="required" type="password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger" style="color:red"></span>
+                </p>
+                <p class="keeplogin"> 
+					<input type="checkbox" id="brand" value="">
+					<label for="brand"><span></span> Remember me?</label>
+				</p>
+                <p class="login button"> 
+                    <input type="submit" value="Login" /> 
+				</p>
+                <p class="change_link">
+					<span>Not a member yet ?</span>
+					<a href="/LoginAndRegistration/Register" class="to_register">Register Now</a>
+				</p>
+            }
+        </div>
+		
+
+        @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
+
+

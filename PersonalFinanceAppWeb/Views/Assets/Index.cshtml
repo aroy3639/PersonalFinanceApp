@@ -1,0 +1,57 @@
+﻿@model IEnumerable<PersonalFinanceAppWeb.Models.Asset>
+
+@{
+    
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["PageTitle"] = "Assets";
+    ViewData["PageActionText"] = "+ New Asset";
+    ViewData["PageActionUrl"] = "/Assets/AddOrEdit";
+}
+
+<div class="row align-content-center">
+    <div class="col-md-10">
+        <ejs-grid id="assets" dataSource="@Model" gridLines="None" allowSorting="true" allowPaging="true">
+            <e-grid-pagesettings pageSize="10"></e-grid-pagesettings>
+            <e-grid-columns>
+                <e-grid-column headerText="Asset Name" field="AssetName"></e-grid-column>
+                <e-grid-column headerText="Asset Class" template="#typeColumnTemplate" width="150px" ></e-grid-column>
+                <e-grid-column headerText="Expected Returns" field="ExpectedReturn" ></e-grid-column>
+                <e-grid-column headerText="Actions" template="#actionColumnTemplate" width="100px" ></e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+    </div>
+    @*<div class="col-md-5">
+            <div class="widget h-100 d-flex justify-content-center align-items-center" style="background-color:#212b36">
+                <i class="fa-solid fa-shapes fa-2xl"></i>
+            </div>
+     </div>*@
+</div>
+
+<script id="typeColumnTemplate" type="text/x-template">
+    ${if(AssetClass=="Equity")}
+    <span class="badge bg-danger">${AssetClass}</span>
+    ${else if(AssetClass=="Debt")}
+    <span class="badge bg-success">${AssetClass}</span>
+     ${else}
+     <span class="badge bg-warning">${AssetClass}</span>
+    ${/if}
+</script>
+
+<script id="actionColumnTemplate" type="text/x-template">
+    <div class="d-flex flex-row justify-content-start">
+        <a class="btn btn-sm no-a-decoration" href="/Assets/AddOrEdit/${AssetID}">
+            <i class="fa-solid fa-pen fa-lg"></i>
+        </a>
+        <form action="/Assets/Delete/${AssetID}" method="post">
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-sm btn-link no-a-decoration"
+            onclick="    return confirm(&quot;Are you sure you want to delete this record &quot;) ">
+            <i class="fa-solid fa-trash-can fa-lg text-danger"></i>
+
+            </button>
+
+        </form>
+        
+    </div>
+
+</script>
